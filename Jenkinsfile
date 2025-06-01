@@ -10,7 +10,7 @@ pipeline {
                 // Ajouter le répertoire des exécutables de pipx au PATH pour que 'pipx' soit trouvable
                 sh 'export PATH="$HOME/.local/bin:$PATH"'
                 // Installer poetry via pipx. --force assure qu'il est installé/mis à jour.
-                sh 'pipx install poetry --force'
+                sh 'pipx install poetry'
                 // Vérifier que poetry est maintenant disponible
                 sh 'poetry --version'
             }
